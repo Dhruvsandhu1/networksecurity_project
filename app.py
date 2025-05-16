@@ -6,7 +6,8 @@ ca = certifi.where()
 
 from dotenv import load_dotenv
 load_dotenv()
-mongo_db_url = os.getenv("MONGODB_URL_KEY")
+# mongo_db_url = os.getenv("MONGODB_URL_KEY")
+mongo_db_url="mongodb+srv://dhruvsandhu21:dhruvsandhu21@cluster0.n2ipt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 print(mongo_db_url)
 import pymongo
 from networksecurity.exception.exception import NetworkSecurityException
