@@ -9,4 +9,4 @@ collection = db['mycollection']
 
 # Get and print database and collection names
 print("Database Name:", collection.database.name)
-print("Collection Name:", collection.name)
+print("Collection Name:", collection.name) 
