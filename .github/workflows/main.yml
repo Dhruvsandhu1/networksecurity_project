@@ -92,7 +92,7 @@ jobs:
        
       - name: Run Docker Image to serve users
         run: |
-         docker run -d -p 8000:8000 --ipc="host" --name=networksecurity \
+         docker run -d -p 8000:8080 --ipc="host" --name=networksecurity \
           -e 'MONGO_DB_URL=${{ secrets.MONGO_DB_URL }}' \
           -e 'MLFLOW_TRACKING_URI=${{ secrets.MLFLOW_TRACKING_URI }}' \
           -e 'MLFLOW_TRACKING_USERNAME=${{ secrets.MLFLOW_TRACKING_USERNAME }}' \
